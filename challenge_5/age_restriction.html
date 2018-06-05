@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <div class="">
+      <!-- input of number(age) from the user -->
+      <input type="number" name="age" value="" id="input" min="1">
+
+      <div id="display">
+        <!-- display div -->
+      </div><br>
+
+      <button type="button" name="button" id="button">Submit</button>
+    </div>
+
+
+
+
+
+
+
+    <script type="text/javascript">
+
+      alert("input your age please");
+
+      let button=document.getElementById("button");
+      let displayDiv = document.getElementById("display");
+      button.onclick = function(){
+
+        let ageInput = document.getElementById("input");
+
+        // must use the ageInput.value >> must use the .value
+        // becasue the input is of type "number"
+        if (ageInput.value > 0) {
+          displayDiv.innerHTML = "Thank you for entering your age!";
+        } else {
+          displayDiv.innerHTML = "Could you please enter your age, kindly.";
+        }
+
+
+      }
+
+
+
+    </script>
+  </body>
+</html>
